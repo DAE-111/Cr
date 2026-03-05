@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cr – Non-Custodial Security for Autonomous AI Agents</title>
+  <meta name="description" content="The first non-custodial security infrastructure for autonomous AI agents managing crypto wallets, virtual cards, spending approvals, and rule enforcement — without ever holding your keys." />
+  <meta property="og:title" content="Cr – Non-Custodial AI Security Infrastructure" />
+  <meta property="og:description" content="Security for autonomous AI agents managing crypto wallets, virtual cards, and spending approvals — without ever holding your keys." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#6c63ff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#" aria-label="Cr home">
+        <div class="nav__logo-icon" aria-hidden="true">CR</div>
+        <span>Cr</span>
+      </a>
+
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#pillars">Security</a></li>
+        <li><a href="#waitlist" class="nav__cta">Get Early Access</a></li>
+      </ul>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <div class="hero__badge" role="status">
+      <span class="hero__badge-dot" aria-hidden="true"></span>
+      Now in Private Beta
+    </div>
+
+    <h1>
+      The First <span class="gradient-text">Non-Custodial</span><br />
+      Security Infrastructure<br />
+      for Autonomous AI Agents
+    </h1>
+
+    <p class="hero__sub">
+      Let AI agents manage crypto wallets, virtual cards, spending approvals, and rule
+      enforcement — without ever holding your keys.
+    </p>
+
+    <div class="hero__actions">
+      <a href="#waitlist" class="btn btn--primary">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        Get Early Access
+      </a>
+      <a href="#how-it-works" class="btn btn--ghost">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+        See How It Works
+      </a>
+    </div>
+
+    <div class="hero__stats" role="list" aria-label="Platform statistics">
+      <div role="listitem">
+        <div class="hero__stat-value" data-count="99.99" data-decimals="2" data-suffix="%">99.99%</div>
+        <div class="hero__stat-label">Uptime SLA</div>
+      </div>
+      <div role="listitem">
+        <div class="hero__stat-value" data-count="0" data-suffix=" keys held">0 keys held</div>
+        <div class="hero__stat-label">Truly Non-Custodial</div>
+      </div>
+      <div role="listitem">
+        <div class="hero__stat-value" data-count="50" data-suffix="ms">&lt;50ms</div>
+        <div class="hero__stat-label">Policy Enforcement Latency</div>
+      </div>
+      <div role="listitem">
+        <div class="hero__stat-value" data-count="100" data-suffix="+ Rules">100+ Rules</div>
+        <div class="hero__stat-label">Out-of-the-Box Policies</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Trusted By ===== -->
+  <div class="logos" aria-label="Supported networks and ecosystems">
+    <p class="logos__label">Works across leading ecosystems</p>
+    <div class="logos__track">
+      <span class="logos__item">Ethereum</span>
+      <span class="logos__item">Solana</span>
+      <span class="logos__item">Base</span>
+      <span class="logos__item">Polygon</span>
+      <span class="logos__item">Arbitrum</span>
+      <span class="logos__item">Avalanche</span>
+      <span class="logos__item">BNB Chain</span>
+    </div>
+  </div>
+
+  <!-- ===== Features ===== -->
+  <section class="features" id="features" aria-label="Features">
+    <div class="container">
+      <div class="features__head" data-animate>
+        <div class="section-label">Core Capabilities</div>
+        <h2 class="section-title">Everything an AI agent needs<br />to operate securely with funds</h2>
+        <p class="section-desc">
+          A complete security layer purpose-built for agentic systems — from programmable wallets
+          to real-time policy enforcement.
+        </p>
+      </div>
+
+      <div class="features__grid">
+
+        <article class="feature-card" data-animate>
+          <div class="feature-card__icon" aria-hidden="true">🔐</div>
+          <h3 class="feature-card__title">Non-Custodial Wallet Management</h3>
+          <p class="feature-card__desc">
+            AI agents can initiate, sign, and broadcast transactions using MPC or smart-account
+            wallets. Your private keys never leave your device or custody.
+          </p>
+        </article>
+
+        <article class="feature-card" data-animate>
+          <div class="feature-card__icon" aria-hidden="true">💳</div>
+          <h3 class="feature-card__title">Virtual Card Issuance</h3>
+          <p class="feature-card__desc">
+            Issue programmable virtual cards backed by on-chain funds. Set merchant restrictions,
+            currency limits, and expiry — all enforced at the infrastructure level.
+          </p>
+        </article>
+
+        <article class="feature-card" data-animate>
+          <div class="feature-card__icon" aria-hidden="true">✅</div>
+          <h3 class="feature-card__title">Spending Approvals</h3>
+          <p class="feature-card__desc">
+            Define multi-party approval workflows for high-value transactions. Human-in-the-loop
+            or fully automated approval chains with cryptographic audit trails.
+          </p>
+        </article>
+
+        <article class="feature-card" data-animate>
+          <div class="feature-card__icon" aria-hidden="true">📋</div>
+          <h3 class="feature-card__title">Rule Enforcement Engine</h3>
+          <p class="feature-card__desc">
+            Declare spend limits, allowlisted addresses, time-window budgets, and velocity caps in
+            code. Rules execute on-chain — no single point of failure.
+          </p>
+        </article>
+
+        <article class="feature-card" data-animate>
+          <div class="feature-card__icon" aria-hidden="true">🤖</div>
+          <h3 class="feature-card__title">Agent Identity &amp; Auth</h3>
+          <p class="feature-card__desc">
+            Every AI agent gets a verifiable on-chain identity with scoped permissions. Revoke,
+            rotate, or elevate agent credentials without touching keys.
+          </p>
+        </article>
+
+        <article class="feature-card" data-animate>
+          <div class="feature-card__icon" aria-hidden="true">🛡️</div>
+          <h3 class="feature-card__title">Real-Time Threat Detection</h3>
+          <p class="feature-card__desc">
+            On-chain and off-chain signals feed a live risk engine. Suspicious agent behavior
+            triggers automatic circuit-breakers and human alerts.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== How It Works ===== -->
+  <section class="how" id="how-it-works" aria-label="How it works">
+    <div class="container">
+      <div class="how__inner">
+
+        <div>
+          <div class="section-label" data-animate>How It Works</div>
+          <h2 class="section-title" data-animate>Zero-knowledge control.<br />Full agent autonomy.</h2>
+          <p class="section-desc" data-animate>
+            Cr sits between your AI agent and the blockchain, enforcing policy without ever
+            touching your private keys.
+          </p>
+
+          <div class="how__steps" style="margin-top:36px">
+
+            <div class="how__step" role="button" tabindex="0">
+              <div class="how__step-num" aria-hidden="true">1</div>
+              <div>
+                <div class="how__step-title">Agent requests an action</div>
+                <div class="how__step-desc">
+                  Your AI agent submits a signed intent — e.g. "transfer 0.5 ETH to address X" —
+                  through the Cr SDK.
+                </div>
+              </div>
+            </div>
+
+            <div class="how__step" role="button" tabindex="0">
+              <div class="how__step-num" aria-hidden="true">2</div>
+              <div>
+                <div class="how__step-title">Policy engine evaluates rules</div>
+                <div class="how__step-desc">
+                  Every rule you've defined — spend caps, allowlists, time windows — is checked
+                  in under 50 ms against the intent payload.
+                </div>
+              </div>
+            </div>
+
+            <div class="how__step" role="button" tabindex="0">
+              <div class="how__step-num" aria-hidden="true">3</div>
+              <div>
+                <div class="how__step-title">MPC co-signs the transaction</div>
+                <div class="how__step-desc">
+                  If the intent passes, threshold signatures from your key-shares produce a valid
+                  signature. Cr never assembles the full private key.
+                </div>
+              </div>
+            </div>
+
+            <div class="how__step" role="button" tabindex="0">
+              <div class="how__step-num" aria-hidden="true">4</div>
+              <div>
+                <div class="how__step-title">Transaction is broadcast &amp; logged</div>
+                <div class="how__step-desc">
+                  The signed transaction goes on-chain with an immutable audit record — every
+                  action traceable, every rule provable.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Diagram -->
+        <div class="how__visual animate-float" aria-hidden="true">
+          <div class="how__diagram">
+
+            <div class="diagram-node diagram-node--highlight">
+              <span class="diagram-node__icon">🤖</span>
+              <div>
+                <div style="font-size:.75rem;color:var(--text-muted);margin-bottom:2px">AI Agent</div>
+                <div>Signs intent payload</div>
+              </div>
+            </div>
+
+            <div class="diagram-connector">
+              <div class="diagram-connector__line"></div>
+              <span>Cr Policy Engine</span>
+              <div class="diagram-connector__line"></div>
+            </div>
+
+            <div class="diagram-node">
+              <span class="diagram-node__icon">📋</span>
+              <div>
+                <div style="font-size:.75rem;color:var(--text-muted);margin-bottom:2px">Rule Check</div>
+                <div>Spend limit · Allowlist · Time window</div>
+              </div>
+            </div>
+
+            <div class="diagram-connector">
+              <div class="diagram-connector__line"></div>
+              <span>MPC Co-Sign</span>
+              <div class="diagram-connector__line"></div>
+            </div>
+
+            <div class="diagram-node">
+              <span class="diagram-node__icon">🔑</span>
+              <div>
+                <div style="font-size:.75rem;color:var(--text-muted);margin-bottom:2px">Threshold Signature</div>
+                <div>Key shards never combined</div>
+              </div>
+            </div>
+
+            <div class="diagram-connector">
+              <div class="diagram-connector__line"></div>
+              <span>Broadcast</span>
+              <div class="diagram-connector__line"></div>
+            </div>
+
+            <div class="diagram-node diagram-node--highlight">
+              <span class="diagram-node__icon">⛓️</span>
+              <div>
+                <div style="font-size:.75rem;color:var(--text-muted);margin-bottom:2px">On-Chain</div>
+                <div>Transaction confirmed + audit log</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Architecture / Key management ===== -->
+  <section class="keys" id="architecture" aria-label="Key management architecture">
+    <div class="container">
+      <div class="keys__inner">
+
+        <div>
+          <div class="section-label" data-animate>Key Architecture</div>
+          <h2 class="section-title" data-animate>We never hold<br />your keys. Period.</h2>
+          <p class="section-desc" data-animate>
+            Cr uses Multi-Party Computation (MPC) and ERC-4337 smart accounts to give AI agents
+            the power to transact without centralising key material anywhere.
+          </p>
+
+          <ul style="margin-top:32px;display:flex;flex-direction:column;gap:16px;list-style:none" data-animate>
+            <li style="display:flex;gap:12px;align-items:flex-start">
+              <span style="color:var(--accent);font-size:1.1rem;margin-top:2px" aria-hidden="true">◆</span>
+              <div>
+                <strong>Threshold Signature Scheme (TSS)</strong>
+                <p style="font-size:.875rem;color:var(--text-muted);margin-top:4px">
+                  Key material is split into shards held by you, your agents, and optional
+                  recovery parties — requiring a t-of-n quorum to sign.
+                </p>
+              </div>
+            </li>
+            <li style="display:flex;gap:12px;align-items:flex-start">
+              <span style="color:var(--accent-2);font-size:1.1rem;margin-top:2px" aria-hidden="true">◆</span>
+              <div>
+                <strong>Smart Account Policies (ERC-4337)</strong>
+                <p style="font-size:.875rem;color:var(--text-muted);margin-top:4px">
+                  On-chain session keys with granular permissions for each agent — automatically
+                  expiring, revocable, and scoped to specific contracts or amounts.
+                </p>
+              </div>
+            </li>
+            <li style="display:flex;gap:12px;align-items:flex-start">
+              <span style="color:var(--accent);font-size:1.1rem;margin-top:2px" aria-hidden="true">◆</span>
+              <div>
+                <strong>Zero-Knowledge Audit Proofs</strong>
+                <p style="font-size:.875rem;color:var(--text-muted);margin-top:4px">
+                  Every enforcement decision produces a ZK proof — verifiable on-chain without
+                  revealing sensitive policy details.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div data-animate>
+          <div class="keys__code" role="img" aria-label="Example Cr policy configuration">
+<span class="code-comment">// cr.config.ts — define agent policies</span>
+
+<span class="code-key">import</span> <span class="code-str">{ definePolicy }</span> <span class="code-key">from</span> <span class="code-str">'@cr/sdk'</span>
+
+<span class="code-key">export default</span> <span class="code-fn">definePolicy</span>({
+  agent: <span class="code-str">'trading-bot-v2'</span>,
+  wallet: <span class="code-str">'0xYourWallet…'</span>,
+
+  <span class="code-comment">// spending limits</span>
+  limits: {
+    daily:  <span class="code-val">{ usd: 5_000 }</span>,
+    single: <span class="code-val">{ usd:   500 }</span>,
+  },
+
+  <span class="code-comment">// only these contracts</span>
+  allowlist: [
+    <span class="code-str">'0xUniswapRouter'</span>,
+    <span class="code-str">'0xAavePool'</span>,
+  ],
+
+  <span class="code-comment">// time-based gating</span>
+  schedule: {
+    tz:    <span class="code-str">'UTC'</span>,
+    hours: <span class="code-val">[8, 22]</span>,  <span class="code-comment">// 08:00–22:00</span>
+  },
+
+  <span class="code-comment">// approval chain for large txns</span>
+  approvals: {
+    threshold: <span class="code-val">{ usd: 1_000 }</span>,
+    signers:   [<span class="code-str">'0xOwner'</span>, <span class="code-str">'0xTreasury'</span>],
+    minSigs:   <span class="code-val">1</span>,
+  },
+})
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Security Pillars ===== -->
+  <section class="pillars" id="pillars" aria-label="Security pillars">
+    <div class="container">
+      <div style="text-align:center" data-animate>
+        <div class="section-label">Security First</div>
+        <h2 class="section-title">Built on provable guarantees</h2>
+        <p class="section-desc" style="margin:0 auto">
+          Every component of Cr is designed for adversarial conditions — because AI agents
+          operating with real money deserve production-grade security.
+        </p>
+      </div>
+
+      <div class="pillars__grid">
+
+        <div class="pillar" data-animate>
+          <div class="pillar__icon" aria-hidden="true">🔒</div>
+          <h3 class="pillar__title">Non-Custodial by Design</h3>
+          <p class="pillar__desc">
+            Key shards are generated client-side. Cr's servers see only ciphertext — never
+            plain key material.
+          </p>
+        </div>
+
+        <div class="pillar" data-animate>
+          <div class="pillar__icon" aria-hidden="true">⚡</div>
+          <h3 class="pillar__title">Sub-50ms Enforcement</h3>
+          <p class="pillar__desc">
+            Policy checks run in-memory with pre-compiled rule sets — no round-trips to
+            external databases before signing.
+          </p>
+        </div>
+
+        <div class="pillar" data-animate>
+          <div class="pillar__icon" aria-hidden="true">🔍</div>
+          <h3 class="pillar__title">Full Auditability</h3>
+          <p class="pillar__desc">
+            Every agent action, rule evaluation, and signature produces an immutable on-chain
+            record with ZK proofs for compliance.
+          </p>
+        </div>
+
+        <div class="pillar" data-animate>
+          <div class="pillar__icon" aria-hidden="true">🛑</div>
+          <h3 class="pillar__title">Automatic Circuit Breakers</h3>
+          <p class="pillar__desc">
+            Anomaly detection halts spending in real time. One click (or API call) freezes all
+            agent permissions globally.
+          </p>
+        </div>
+
+        <div class="pillar" data-animate>
+          <div class="pillar__icon" aria-hidden="true">🧩</div>
+          <h3 class="pillar__title">Modular &amp; Composable</h3>
+          <p class="pillar__desc">
+            Integrate Cr as a standalone policy layer, or embed it into your existing smart
+            account stack via standard ERC-4337 hooks.
+          </p>
+        </div>
+
+        <div class="pillar" data-animate>
+          <div class="pillar__icon" aria-hidden="true">📜</div>
+          <h3 class="pillar__title">Open &amp; Verifiable</h3>
+          <p class="pillar__desc">
+            Core policy contracts are open source and audited. Verify every enforcement rule
+            yourself — no black boxes.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA / Waitlist ===== -->
+  <section class="cta" id="waitlist" aria-label="Early access waitlist">
+    <div class="cta__glow" aria-hidden="true"></div>
+    <div class="container" style="position:relative;z-index:1">
+      <h2 data-animate>
+        Ready to give your AI agents<br />
+        <span class="gradient-text">real financial superpowers?</span>
+      </h2>
+      <p data-animate>
+        Join the private beta. Be among the first teams to deploy autonomous AI agents
+        with non-custodial crypto infrastructure.
+      </p>
+      <form class="cta__form" id="waitlistForm" data-animate aria-label="Waitlist signup form" novalidate>
+        <label for="waitlistEmail" class="sr-only">Email address</label>
+        <input
+          type="email"
+          id="waitlistEmail"
+          class="cta__input"
+          placeholder="you@yourcompany.com"
+          required
+          aria-required="true"
+          autocomplete="email"
+        />
+        <button type="submit" class="btn btn--primary">
+          Join Waitlist
+        </button>
+      </form>
+      <p style="margin-top:16px;font-size:.78rem;color:var(--text-muted)" data-animate>
+        No credit card required. We'll reach out within 48 hours.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__copy">
+        &copy; <span id="year"></span> Cr. Non-custodial security for the autonomous age.
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#pillars">Security</a>
+        <a href="#waitlist">Early Access</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ===== Visually hidden utility ===== -->
+  <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
+
+  <script src="app.js" defer></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
